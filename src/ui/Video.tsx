@@ -12,9 +12,8 @@ const Video: FC<VideoProps> = () => {
       playing
       width={1280}
       height={720}
-      style={{
-        zIndex: 1000,
-      }}
+      muted
+      loop
     />
   )
 }

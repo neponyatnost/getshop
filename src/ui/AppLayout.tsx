@@ -1,10 +1,12 @@
 import { Outlet } from 'react-router-dom'
 import styled from 'styled-components'
+import StartPage from '../pages/StartPage'
 import Video from './Video'
 
 const Container = styled.div`
   width: 1280px;
   height: 720px;
+  overflow: hidden;
   margin: 0 auto;
   position: relative;
   background-color: #f4f4f4;
@@ -13,8 +15,9 @@ const Container = styled.div`
 const AppLayout = () => {
   return (
     <Container>
-      <Outlet />
       <Video />
+      <StartPage />
+      <Outlet />
     </Container>
   )
 }
